@@ -10,7 +10,7 @@ import {
   Square,
   Monitor,
 } from 'lucide-react';
-import { AspectRatio, Project } from '../types/studio';
+import { AspectRatio, Project } from './studio';
 
 interface HeaderBarProps {
   project: Project;

@@ -18,18 +18,18 @@ import {
   SOUNDTRACKS,
   STARTER_TEMPLATES,
   StarterTemplate,
-} from '../data/presets';
+} from './presets';
 import {
   GenerationStyle,
   GenerationVisualMode,
-} from '../engine/scriptGenerator';
+} from './scriptGenerator';
 import {
   AspectRatio,
   CaptionPosition,
   Project,
   ProjectSettings,
   SoundtrackId,
-} from '../types/studio';
+} from './studio';
 
 type LeftTab = 'generate' | 'audio' | 'look';
 

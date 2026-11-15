@@ -1,4 +1,4 @@
-import { ParticleEffect } from '../types/studio';
+import { ParticleEffect } from './studio';
 import { mulberry32 } from './cinemaWorlds';
 
 /**

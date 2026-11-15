@@ -5,7 +5,7 @@ import {
   Project,
   getCanvasDimensions,
   getTotalDuration,
-} from '../types/studio';
+} from './studio';
 import { StudioAudioEngine } from './audioEngine';
 import { MediaCache, getTimelineCursor, renderProjectFrame } from './renderer';
 

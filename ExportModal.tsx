@@ -7,8 +7,8 @@ import {
   Loader2,
   X,
 } from 'lucide-react';
-import { exportProjectVideo } from '../engine/exporter';
-import { MediaCache } from '../engine/renderer';
+import { exportProjectVideo } from './exporter';
+import { MediaCache } from './renderer';
 import {
   ExportOptions,
   ExportProgress,
@@ -16,7 +16,7 @@ import {
   Project,
   getCanvasDimensions,
   getTotalDuration,
-} from '../types/studio';
+} from './studio';
 
 interface ExportModalProps {
   project: Project;

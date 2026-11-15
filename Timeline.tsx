@@ -10,9 +10,9 @@ import {
   Trash2,
   Type,
 } from 'lucide-react';
-import { SOUNDTRACKS } from '../data/presets';
-import { MediaCache, getSceneStartTime, renderSceneThumbnail } from '../engine/renderer';
-import { Project, Scene, getTotalDuration } from '../types/studio';
+import { SOUNDTRACKS } from './presets';
+import { MediaCache, getSceneStartTime, renderSceneThumbnail } from './renderer';
+import { Project, Scene, getTotalDuration } from './studio';
 
 interface TimelineProps {
   project: Project;

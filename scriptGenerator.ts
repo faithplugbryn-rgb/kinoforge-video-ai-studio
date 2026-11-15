@@ -8,7 +8,7 @@ import {
   Scene,
   SoundtrackId,
   TransitionType,
-} from '../types/studio';
+} from './studio';
 import { searchWikimediaPhotos } from './mediaSearch';
 
 export type GenerationStyle =

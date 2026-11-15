@@ -1,4 +1,4 @@
-import { Project, SoundtrackId } from '../types/studio';
+import { Project, SoundtrackId } from './studio';
 
 interface TrackSpec {
   bpm: number;

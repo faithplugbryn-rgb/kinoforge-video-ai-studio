@@ -1,27 +1,27 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ExportModal } from './components/ExportModal';
-import { HeaderBar } from './components/HeaderBar';
-import { LeftSidebar } from './components/LeftSidebar';
-import { PreviewMonitor } from './components/PreviewMonitor';
-import { SceneInspector } from './components/SceneInspector';
-import { Timeline } from './components/Timeline';
-import { createDefaultProject } from './data/presets';
+import { ExportModal } from './ExportModal';
+import { HeaderBar } from './HeaderBar';
+import { LeftSidebar } from './LeftSidebar';
+import { PreviewMonitor } from './PreviewMonitor';
+import { SceneInspector } from './SceneInspector';
+import { Timeline } from './Timeline';
+import { createDefaultProject } from './presets';
 import {
   StudioAudioEngine,
   speakSceneNarration,
   stopSpeechNarration,
-} from './engine/audioEngine';
-import { generateProjectSRT } from './engine/exporter';
+} from './audioEngine';
+import { generateProjectSRT } from './exporter';
 import {
   MediaCache,
   getSceneStartTime,
   getTimelineCursor,
-} from './engine/renderer';
+} from './renderer';
 import {
   GenerationStyle,
   GenerationVisualMode,
   generateStoryboard,
-} from './engine/scriptGenerator';
+} from './scriptGenerator';
 import {
   AspectRatio,
   Project,
@@ -29,7 +29,7 @@ import {
   Scene,
   SoundtrackId,
   getTotalDuration,
-} from './types/studio';
+} from './studio';
 
 const STORAGE_KEY = 'kinoforge_studio_project_v1';
 

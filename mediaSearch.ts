@@ -1,4 +1,4 @@
-import { StockPhotoResult } from '../types/studio';
+import { StockPhotoResult } from './studio';
 
 /**
  * 100% Free, Zero-API-Key, CORS-safe high-res photography via Wikimedia Commons API.

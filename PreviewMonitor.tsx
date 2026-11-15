@@ -13,8 +13,8 @@ import {
   Project,
   getCanvasDimensions,
   getTotalDuration,
-} from '../types/studio';
-import { MediaCache, getTimelineCursor, renderProjectFrame } from '../engine/renderer';
+} from './studio';
+import { MediaCache, getTimelineCursor, renderProjectFrame } from './renderer';
 
 interface PreviewMonitorProps {
   project: Project;

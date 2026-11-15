@@ -3,7 +3,7 @@ import {
   MediaAssetEntry,
   Project,
   Scene,
-} from '../types/studio';
+} from './studio';
 import { drawCinemaWorld } from './cinemaWorlds';
 import { drawParticles } from './particles';
 

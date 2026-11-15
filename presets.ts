@@ -8,8 +8,8 @@ import {
   Project,
   SoundtrackId,
   TransitionType,
-} from '../types/studio';
-import { GenerationStyle } from '../engine/scriptGenerator';
+} from './studio';
+import { GenerationStyle } from './scriptGenerator';
 
 export const CINEMA_WORLDS: {
   id: CinemaWorld;

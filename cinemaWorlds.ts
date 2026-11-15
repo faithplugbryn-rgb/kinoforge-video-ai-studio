@@ -1,4 +1,4 @@
-import { CinemaWorld } from '../types/studio';
+import { CinemaWorld } from './studio';
 
 /** Deterministic PRNG (Mulberry32) so frames never flicker across renders */
 export function mulberry32(seed: number): () => number {

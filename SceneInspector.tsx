@@ -21,15 +21,15 @@ import {
   CINEMA_WORLDS,
   PARTICLE_EFFECTS,
   TRANSITION_TYPES,
-} from '../data/presets';
-import { generateFreeAIImage, searchWikimediaPhotos } from '../engine/mediaSearch';
-import { estimateSceneDuration } from '../engine/scriptGenerator';
+} from './presets';
+import { generateFreeAIImage, searchWikimediaPhotos } from './mediaSearch';
+import { estimateSceneDuration } from './scriptGenerator';
 import {
   AspectRatio,
   Scene,
   StockPhotoResult,
   getCanvasDimensions,
-} from '../types/studio';
+} from './studio';
 
 interface SceneInspectorProps {
   scene: Scene | null;
