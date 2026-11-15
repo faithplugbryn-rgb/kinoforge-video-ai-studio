@@ -1,0 +1,28 @@
+{
+  "name": "kinoforge-video-ai-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Free, zero-API-key script-to-video AI studio in the browser with procedural cinema rendering, free stock media, kinetic captions, synthesized soundtracks, and real video export.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.73.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
