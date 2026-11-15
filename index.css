@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #09090b;
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+    overflow: hidden;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom sleek studio scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Subtle cinema monitor checkerboard for letterboxing/framing */
+.monitor-backdrop {
+  background-color: #070709;
+  background-image:
+    radial-gradient(circle at 50% 45%, rgba(249, 115, 22, 0.045) 0%, transparent 58%),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px, 28px 28px;
+}
+
+/* Custom sleek range slider */
+input[type='range'].studio-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #27272a;
+  height: 4px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 9999px;
+  background: #f97316;
+  border: 2px solid #09090b;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #fb923c;
+}
+
+input[type='range'].studio-slider::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 9999px;
+  background: #f97316;
+  border: 2px solid #09090b;
+  cursor: pointer;
+}
